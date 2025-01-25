@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  
+  \usepackage[utf8]{inputenc}
+    \usepackage{xcolor}
+    \usepackage{graphicx}
+    \usepackage{tikz}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\definecolor{Maroon}{HTML}{771624}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Mark Joslin}
+\tagline{Junior Data Scientist}
+
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{mjoslin93@protonmail.com}
+  \phone{517.304.3745}
+  \location{Brighton, MI}
+  \github{github.com/mjoslin-ai?tab=repositories}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[resumeSidebar]{Experience}
+
+\cvevent{Data Specialist (Remote)}{Global Center for Automotive Performance Simulation (GCAPS)}{Apr '21 -- May '24}{Alton, VA}
+\begin{itemize}
+\item Conducted exploratory data analysis into cut-in and lane change of naturalistic driving highway data and presented findings to Division of Data and Analytics at Virginia Tech Transportation Institute (VTTI).
+\smallskip
+\item Maintained an internal website and SQL database to track naturalistic driving simulation construction. 
+\smallskip
+\item Performed literature reviews for the National Highway Traffic Safety Administration (NHTSA) and others in areas such as AI uses in ADAS/ADS, traffic simulation tools, and medical data cybersecurity. 
+\end{itemize}
+
+\divider
+
+\cvevent{Cataloging Intern}{American Mathematical Society}{May '19 -- Aug '19}{Ann Arbor, MI}
+\begin{itemize}
+\item Queried a large database for institution codes.
+\smallskip
+\item Prepared submitted journals to be stored in a database and 
+accessed by our clients. 
+\item Notified others to contact an author when key journal information is missing.
+\end{itemize}
+
+\cvsection{Projects}
+\cvproject{HR Analytics}
+\begin{itemize}
+\item Developed a Power BI dashboard to analyze working preference of employees between work from home and work from office along with sick leave percentage on a daily and monthly basis.
+\item The report will help an employer when scheduling in-person meetings, product rollouts, and employee wellness.
+\end{itemize}
+
+\smallskip
+
+
+
+\clearpage
+
+\end{document}
