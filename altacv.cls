@@ -158,7 +158,7 @@
     \medskip
     {\large\bfseries\color{Maroon}\@tagline\par}
     \medskip
-    {\footnotesize\bfseries\@personalinfo\par}
+    {\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
     \begin{minipage}{\@photodiameter}
@@ -190,9 +190,8 @@
   {\large\color{Maroon}#1\par}
   \smallskip\normalsize
   \ifstrequal{#2}{}{}{
-  \textbf{\color{accent}#2}\par
-  \smallskip}
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
+  \textbf{\color{accent}#2}\par}
+  \ifstrequal{#3}{}{}{{\smallskip\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
   \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}}\par
   \medskip\normalsize
 }
@@ -225,8 +224,9 @@
 }
 
 \newcommand{\cvref}[4]{%
-  {\large\color{Maroon}#1\par} 
-  \textbf{\color{accent}#2}\par 
+  {\large\color{Maroon}#1\par}
+  \smallskip\normalsize
+  {\textbf{\color{accent}#2}\par\smallskip}
   \begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em]
   \item[\normalfont\emailsymbol] #3
   \item[\small\normalfont\phonesymbol] #4
