@@ -10,7 +10,7 @@
     },
     "profile": "Curious and driven individual with a passion for growing expertise in [role]. Proven success in data-driven solutions and KPI reporting, combined with skills in Python, SQL, and PowerBI. Eager to leverage my data specialist background to innovate and learn while contributing to the efficiency and impact at [company].",
     "skills": {
-      "languages": ["Python", "R", "SQL", "DAX", "Python", "R", "SQL", "DAX"],
+      "languages": ["Python", "R", "SQL", "DAX", "LaTeX"],
       "visualization": ["PowerBI", "Matplotlib", "ggplot2"]
     },
     "experience": [
