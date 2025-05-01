@@ -1,0 +1,158 @@
+%---------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%---------------------------------------------------------------
+
+\documentclass[10pt]{cv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+\usepackage{lipsum} 
+\usepackage{comment}
+\input{macros.tex} % Data
+
+% Suppress layout warnings
+\hbadness=10000  % Suppresses warnings for bad horizontal spacing
+\vbadness=10000  % Suppresses warnings for bad vertical spacing
+
+\begin{document}
+
+
+%---------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%---------------------------------------------------------------
+
+\cvHeader{\name}{\designation}{\phone}{\location}{\email}{\github}{\linkedin}
+
+
+%---------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%---------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Profile}
+	%\vspace{-6pt}
+	\profile\\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vskip -6pt
+    \ifdefined\skillsCategoryZero
+        \cvSkills{\skillsCategoryZero}{\skillsZero}
+    \fi
+
+    \ifdefined\skillsCategoryOne
+        \cvSkills{\skillsCategoryOne}{\skillsOne}
+    \fi
+    
+    \ifdefined\skillsCategoryTwo
+        \cvSkills{\skillsCategoryTwo}{\skillsTwo}
+    \fi
+
+    \ifdefined\skillsCategoryThree
+        \cvSkills{\skillsCategoryThree}{\skillsThree}
+    \fi
+
+    \ifdefined\skillsCategoryFour
+        \cvSkills{\skillsCategoryFour}{\skillsFour}
+    \fi
+\end{minipage}
+       
+    
+%---------------------------------------------------------------
+%	EXPERIENCE
+%---------------------------------------------------------------
+
+\vspace{-10pt}
+\cvsect{Experience}
+\begin{entrylist}
+    \ifdefined\expStartZero
+        \cvEntry{\expStartZero}{\expEndZero}{\expTitleZero}{\expCompanyZero}{\expResponsibilitiesZero}
+    \fi
+    
+    \ifdefined\expStartOne
+        \cvEntry{\expStartOne}{\expEndOne}{\expTitleOne}{\expCompanyOne}{\expResponsibilitiesOne}
+    \fi
+
+    \ifdefined\expStartTwo
+        \cvEntry{\expStartTwo}{\expEndTwo}{\expTitleTwo}{\expCompanyTwo}{\expResponsibilitiesTwo}
+    \fi
+
+    \ifdefined\expStartThree
+        \cvEntry{\expStartThree}{\expEndThree}{\expTitleThree}{\expCompanyThree}{\expResponsibilitiesThree}
+    \fi
+
+    \ifdefined\expStartFour
+        \cvEntry{\expStartFour}{\expEndFour}{\expTitleFour}{\expCompanyFour}{\expResponsibilitiesFour}
+    \fi
+\end{entrylist}
+
+
+%---------------------------------------------------------------
+%	EDUCATION
+%---------------------------------------------------------------
+
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \ifdefined\eduStartZero
+    \cvEntry{\eduStartZero}{\eduEndZero}{\eduDegreeZero}{\eduInstitutionZero}{\eduCourseworkZero}
+    \fi
+
+    \ifdefined\eduStartOne
+    \cvEntry{\eduStartOne}{\eduEndOne}{\eduDegreeOne}{\eduInstitutionOne}{\eduCourseworkOne}
+    \fi
+
+    \ifdefined\eduStartTwo
+    \cvEntry{\eduStartTwo}{\eduEndTwo}{\eduDegreeTwo}{\eduInstitutionTwo}{\eduCourseworkTwo}
+    \fi
+
+    \ifdefined\eduStartThree
+    \cvEntry{\eduStartThree}{\eduEndThree}{\eduDegreeThree}{\eduInstitutionThree}{\eduCourseworkThree}
+    \fi
+
+    \ifdefined\eduStartFour
+    \cvEntry{\eduStartFour}{\eduEndFour}{\eduDegreeFour}{\eduInstitutionFour}{\eduCourseworkFour}
+    \fi
+\end{entrylist}
+
+
+%---------------------------------------------------------------
+%	Projects
+%---------------------------------------------------------------
+
+\cvsect{Projects}
+\begin{entrylist}
+    \ifdefined\projTechZero
+        \cvEntry{\projTechZero}{}{\projTitleZero}{\projSourceZero}{\projDetailsZero}
+    \fi
+
+    \ifdefined\projTechOne
+        \cvEntry{\projTechOne}{}{\projTitleOne}{\projSourceOne}{\projDetailsOne}
+    \fi
+
+    \ifdefined\projTechTwo
+        \cvEntry{\projTechTwo}{}{\projTitleTwo}{\projSourceTwo}{\projDetailsTwo}
+    \fi
+
+    \ifdefined\projTechThree
+        \cvEntry{\projTechThree}{}{\projTitleThree}{\projSourceThree}{\projDetailsThree}
+    \fi
+
+    \ifdefined\projTechFour
+        \cvEntry{\projTechFour}{}{\projTitleFour}{\projSourceFour}{\projDetailsFour}
+    \fi
+\end{entrylist}
+
+
+%---------------------------------------------------------------
+%	References
+%---------------------------------------------------------------
+%\vspace{-10 pt}
+%	\cvsect{References}
+%    \vspace{-6pt}
+%    
+%    \hspace{26mm} \textbf{English} - B2+, \textbf{ Spanish} - native
+
+%---------------------------------------------------------------
+
+\end{document}

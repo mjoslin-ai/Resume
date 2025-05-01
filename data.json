@@ -1,0 +1,100 @@
+{
+    "contact": {
+      "name": "Mark Joslin",
+      "designation": "Business Intelligence",
+      "phone": "(517) 304-3745",
+      "location": "Brighton, MI",
+      "email": "mjoslin93@protonmail.com",
+      "github": "github.com/mjoslin-ai",
+      "linkedin": "in/mark-joslin-46a096361"
+    },
+    "profile": "Curious and driven individual with a passion for growing expertise in [role]. Proven success in data-driven solutions and KPI reporting, combined with skills in Python, SQL, and PowerBI. Eager to leverage my data specialist background to innovate and learn while contributing to the efficiency and impact at [company].",
+    "skills": {
+      "languages": ["Python", "R", "SQL", "DAX", "Python", "R", "SQL", "DAX"],
+      "visualization": ["PowerBI", "Matplotlib", "ggplot2"]
+    },
+    "experience": [
+      {
+        "title": "Data Specialist (Remote)",
+        "company": "GCAPS",
+        "link": "https://www.gcaps.net/",
+        "start": "4/2021",
+        "end": "5/2024",
+        "responsibilities": [
+          "Performed literature reviews for NHTSA in areas such as AI in ADAS/ADS and traffic simulation tools.",
+          "Maintained an internal website and SQL database to track driving simulation construction.",
+          "Created digital reconstructions of crash and near crash scenarios using VTTI’s database."
+        ]
+      },
+      {
+        "title": "Cataloging Intern",
+        "company": "American Mathematical Society",
+        "link": "https://www.ams.org/publications/math-reviews/math-reviews",
+        "start": "5/2019",
+        "end": "8/2019",
+        "responsibilities": [
+          "Queried a large database for institution codes for authors in submitted journals.",
+          "Prepared journals for storage and access in a database.",
+          "Assisted in author notifications regarding missing journal information."
+        ]
+      },
+      {
+        "title": "Durability Driver",
+        "company": "Stellantis",
+        "link": "https://www.chelseaprovinggrounds.com/en-us/Pages/Home.aspx",
+        "start": "5/2016",
+        "end": "9/2017",
+        "responsibilities": [
+          "Conducted endurance tests identifying critical safety and performance issues.",
+          "Ensured precise diagnostics and issue documentation.",
+          "Maintained strict testing protocols to enhance vehicle reliability."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Data Science",
+        "institution": "Western Michigan University",
+        "link": "https://wmich.edu/",
+        "start": "9/2016",
+        "end": "12/2020",
+        "coursework": [
+          "Stat Design/Analysis Experiment",
+          "Big Data Analysis Using Python",
+          "Data Analysis Using R",
+          "Regression Analysis",
+          "Machine Learning",
+          "Survey Methods"
+        ]
+      },
+      {
+        "degree": "A.S. in Engineering",
+        "institution": "Schoolcraft College",
+        "link": "https://www.schoolcraft.edu/",
+        "start": "8/2012",
+        "end": "5/2016"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Lane Change Exploratory Analysis",
+        "tech": "Python",
+        "source": "GCAPS",
+        "link": "https://www.gcaps.net/",
+        "description": [
+          "Created a script that performs dimensionality reduction and clustering on highway cut-in and lane change maneuvers with VTTI’s naturalistic driving database. Visualized and described each factor’s central tendency across clusters.",
+          "The analysis helped the Division of Data and Analytics at VTTI better understand factors that affect these maneuvers compared to domain knowledge."
+        ]
+      },
+      {
+        "title": "HR Analytics Dashboard",
+        "tech": "PowerBI",
+        "source": "GitHub",
+        "link": "https://github.com/mjoslin-ai/PowerBI-HR_Dashboard",
+        "description": [
+          "Developed a dashboard to analyze working preference of employees between work from home and work from office along with sick leave percentage on a daily and monthly basis.",
+          "The report will help an employer when scheduling in-person meetings, product rollouts, and employee wellness."
+        ]
+      }
+    ]
+  }
