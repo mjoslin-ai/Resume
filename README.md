@@ -12,18 +12,10 @@ Easily tailor resume for different companies and roles.
 * LaTeX Workshop from VS Code Marketplace
 * Remote Development from VS Code Marketplace
 
-### Installing
+### Generating Resume
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* Edit data.json
+* Run json_to_tex.py
 
 ## Acknowledgments
 
