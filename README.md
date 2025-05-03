@@ -1,4 +1,4 @@
-# Resume Template
+# Resume
 
 Easily tailor resume for different companies and roles.
 
