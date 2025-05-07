@@ -151,7 +151,29 @@ for i, project in enumerate(data["projects"]):
         latex_output += "\n\n\n"
     else:
         latex_output += "\n\n"
+
+
+# ==============================================================
+# Projects
+# ==============================================================
+
+latex_output += "%------------------------------------\n"
+latex_output += "% REFERENCES\n"
+latex_output += "%------------------------------------\n\n"
+
+for index, ref in enumerate(data["references"]):
+    ref_num = number_to_words(index)
     
+    latex_output += f"\\newcommand{{\\refName{ref_num}}}{{{ref['name']}}}\n"
+    latex_output += f"\\newcommand{{\\refPosition{ref_num}}}{{{ref['position']}}}\n"
+    latex_output += f"\\newcommand{{\\refEmail{ref_num}}}{{\\href{{mailto:{ref['email']}}}{{{ref['email']}}}}}\n"
+    latex_output += f"\\newcommand{{\\refPhone{ref_num}}}{{{ref['phone']}}}\n"
+    
+    if index == len(data["references"]) - 1:  # Last iteration
+        latex_output += "\n\n\n"
+    else:
+        latex_output += "\n"
+
 
 # ==============================================================
 

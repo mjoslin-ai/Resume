@@ -184,3 +184,13 @@
     \fi
     }
 }
+
+
+\newcommand{\cvRef}[4]{
+    \vspace{\baselineskip}
+    \vspace{-10 pt}
+    \textbf{#1}\\
+    #2\\
+    \icon{Envelope}{11}{#3}\\
+    \icon{Phone}{11}{#4}\\
+}
