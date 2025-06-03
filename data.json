@@ -1,17 +1,18 @@
 {
   "contact": {
     "name": "Mark Joslin",
-    "designation": "Business Intelligence",
+    "designation": "",
     "phone": "(517) 304-3745",
     "location": "Brighton, MI",
     "email": "mjoslin93@protonmail.com",
     "github": "github.com/mjoslin-ai",
     "linkedin": "in/mark-joslin-46a096361"
   },
-  "profile": "Curious and driven individual with a passion for growing expertise in [role]. Proven success in data-driven solutions and KPI reporting, combined with skills in Python, SQL, and PowerBI. Eager to leverage my data specialist background to innovate and learn while contributing to the efficiency and impact at [company].",
+  "profile": "Curious and results-driven with a passion for growing expertise in a [position] role. Proven success in data-driven solutions and KPI reporting, combined with skills in Python, SQL, and PowerBI. Eager to leverage my data specialist background to innovate and learn while making a positive impact at [company].",
   "skills": {
-    "languages": ["Python", "R", "SQL", "DAX", "LaTeX"],
-    "visualization": ["PowerBI", "Matplotlib", "ggplot2"]
+    "tools": ["Python", "R", "SQL", "DAX", "Excel"],
+    "visualization": ["PowerBI", "Matplotlib", "ggplot2"],
+    "Version Control": ["GitHub", "Azure DevOps"]
   },
   "experience": [
     {
