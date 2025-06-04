@@ -1,8 +1,15 @@
-coverLetters
-main.aux
-main.fdb_latexmk
-main.fls
-main.log
-main.out
-main.synctex.gz
+coverLetter/CoverLetter.aux
+coverLetter/CoverLetter.aux
+coverLetter/CoverLetter.fdb_latexmk
+coverLetter/CoverLetter.fls
+coverLetter/CoverLetter.log
+coverLetter/CoverLetter.out
+coverLetter/CoverLetter.synctex.gz
+
+resume.aux
+resume.fdb_latexmk
+resume.fls
+resume.log
+resume.out
+resume.synctex.gz
 
