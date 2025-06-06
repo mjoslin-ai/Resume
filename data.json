@@ -1,4 +1,8 @@
 {
+  "job": {
+    "position": "Data Analyst",
+    "company": "ABC Inc"
+  },
   "contact": {
     "name": "Mark Joslin",
     "designation": "",
@@ -8,7 +12,7 @@
     "github": "github.com/mjoslin-ai",
     "linkedin": "in/mark-joslin-46a096361"
   },
-  "profile": "Curious and results-driven with a passion for growing expertise in a [position] role. Proven success in data-driven solutions and KPI reporting, combined with skills in Python, SQL, and PowerBI. Eager to leverage my data specialist background to innovate and learn while making a positive impact at [company].",
+  "profile": "Curious and results-driven with a passion for applying analytical insights to drive strategic decision-making. Proven success in data-driven solutions and KPI reporting, complemented by skills in Python, SQL, and PowerBI. Eager to leverage my data specialist background to innovate, learn, and make a meaningful impact in a dynamic and growth-oriented environment.",
   "skills": {
     "tools": ["Python", "R", "SQL", "DAX", "Excel"],
     "visualization": ["PowerBI", "Matplotlib", "ggplot2"],
