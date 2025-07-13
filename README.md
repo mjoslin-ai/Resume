@@ -14,8 +14,12 @@ Easily tailor resume for different companies and roles.
 
 ### Generating Resume
 
+* Activate the virtual environment:
+  * In PowerShell: `.\venv\Scripts\activate`
+  * In Command Prompt: `venv\Scripts\activate.bat`
 * Edit data.json
-* Run json_to_tex.py
+* Run `json_to_tex.py`
+* Run `resume_&_coverletter.pdf` if resume and cover letter need to be in same document
 
 ## Acknowledgments
 
