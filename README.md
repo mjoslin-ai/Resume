@@ -46,7 +46,7 @@ Easily tailor your resume for different companies and roles.
 
 1. Edit `data.json` with your personal information.
 2. Run `json_to_tex.py` to generate your resume.
-3. If you need the resume and cover letter combined in a single document, run `resume_&_coverletter.pdf`.
+3. If you need the resume and cover letter combined in a single document, run `merge_pdfs.py`.
 
 ## Acknowledgments
 
