@@ -1,7 +1,7 @@
 {
   "job": {
-    "position": "Data Analyst",
-    "company": "ABC Inc"
+    "position": "[Position]",
+    "company": "[Company Name]"
   },
   "contact": {
     "name": "Mark Joslin",
@@ -10,7 +10,7 @@
     "location": "Brighton, MI",
     "email": "mjoslin93@protonmail.com",
     "github": "github.com/mjoslin-ai",
-    "linkedin": "in/mark-joslin-46a096361"
+    "linkedin": "linkedin.com/in/mark-joslin-46a096361"
   },
   "profile": "Curious and results-driven with a passion for applying analytical insights to drive strategic decision-making. Proven success in data-driven solutions and KPI reporting, complemented by skills in Python, SQL, and PowerBI. Eager to leverage my data specialist background to innovate, learn, and make a meaningful impact in a dynamic and growth-oriented environment.",
   "skills": {
@@ -23,6 +23,7 @@
       "title": "Data Specialist (Remote)",
       "company": "GCAPS",
       "link": "https://www.gcaps.net/",
+      "location": "Alton, VA",
       "start": "4/2021",
       "end": "5/2024",
       "responsibilities": [
@@ -35,6 +36,7 @@
       "title": "Cataloging Intern",
       "company": "American Mathematical Society",
       "link": "https://www.ams.org/publications/math-reviews/math-reviews",
+      "location": "Ann Arbor, MI",
       "start": "5/2019",
       "end": "8/2019",
       "responsibilities": [
@@ -47,6 +49,7 @@
       "title": "Durability Driver",
       "company": "Stellantis",
       "link": "https://www.chelseaprovinggrounds.com/en-us/Pages/Home.aspx",
+      "location": "Chelsea, MI",
       "start": "5/2016",
       "end": "9/2017",
       "responsibilities": [
@@ -58,26 +61,18 @@
   ],
   "education": [
     {
-      "degree": "B.S. in Data Science",
+      "degree": "Bachelor of Science in Data Science",
       "institution": "Western Michigan University",
       "link": "https://wmich.edu/",
-      "start": "9/2016",
-      "end": "12/2020",
-      "coursework": [
-        "Stat Design/Analysis Experiment",
-        "Big Data Analysis Using Python",
-        "Data Analysis Using R",
-        "Regression Analysis",
-        "Machine Learning",
-        "Survey Methods"
-      ]
+      "graduation": "12/2020",
+      "location": "Kalamazoo, MI"
     },
     {
-      "degree": "A.S. in Engineering",
+      "degree": "Associate of Science in Engineering",
       "institution": "Schoolcraft College",
       "link": "https://www.schoolcraft.edu/",
-      "start": "8/2012",
-      "end": "5/2016"
+      "graduation": "5/2016",
+      "location": "Livonia, MI"
     }
   ],
   "projects": [
@@ -104,9 +99,9 @@
   ],
   "references": [
     {
-      "name": "Alex Hatchet",
+      "name": "Alex Hatchett",
       "position": "Research Project Manager, GCAPS",
-      "email": "ahatchet@gcaps.net",
+      "email": "ahatchett@gcaps.net",
       "phone": "(434) 766-6644"
     },
     {

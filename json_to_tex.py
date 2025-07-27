@@ -89,9 +89,9 @@ for i, exp in enumerate(data["experience"]):
     latex_output += f"\\newcommand{{\\expTitle{exp_num}}}{{{exp['title']}}}\n"
     
     if "link" in exp and exp["link"]:
-        latex_output += f"\\newcommand{{\\expCompany{exp_num}}}{{\\href{{{exp['link']}}}{{{exp['company']}}}}}\n"
+        latex_output += f"\\newcommand{{\\expCompany{exp_num}}}{{\\href{{{exp['link']}}}{{{exp['company']}}} | {{{exp['location']}}}}}\n"
     else:
-        latex_output += f"\\newcommand{{\\expCompany{exp_num}}}{{{exp['company']}}}\n"
+        latex_output += f"\\newcommand{{\\expCompany{exp_num}}}{{{exp['company']} | {exp['location']}}}\n"
 
     latex_output += f"\\newcommand{{\\expStart{exp_num}}}{{{exp['start']}}}\n"
     latex_output += f"\\newcommand{{\\expEnd{exp_num}}}{{{exp['end']}}}\n"
@@ -118,12 +118,12 @@ for i, edu in enumerate(data["education"]):
     latex_output += f"\\newcommand{{\\eduDegree{edu_num}}}{{{edu['degree']}}}\n"
 
     if "link" in edu and edu["link"]:
-        latex_output += f"\\newcommand{{\\eduInstitution{edu_num}}}{{\\href{{{edu['link']}}}{{{edu['institution']}}}}}\n"
+        latex_output += f"\\newcommand{{\\eduInstitution{edu_num}}}{{\\href{{{edu['link']}}}{{{edu['institution']}}} | {{{edu['location']}}}}}\n"
     else:
-        latex_output += f"\\newcommand{{\\eduInstitution{edu_num}}}{{{edu['institution']}}}\n"
+        latex_output += f"\\newcommand{{\\eduInstitution{edu_num}}}{{{edu['institution']} | {{{edu['location']}}}}}\n"
 
-    latex_output += f"\\newcommand{{\\eduStart{edu_num}}}{{{edu['start']}}}\n"
-    latex_output += f"\\newcommand{{\\eduEnd{edu_num}}}{{{edu['end']}}}"
+    #latex_output += f"\\newcommand{{\\eduStart{edu_num}}}{{{edu['start']}}}\n"
+    latex_output += f"\\newcommand{{\\eduGrad{edu_num}}}{{{edu['graduation']}}}"
 
     if "coursework" in edu:
         coursework = ", ".join(edu["coursework"])

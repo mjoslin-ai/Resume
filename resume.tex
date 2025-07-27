@@ -2,7 +2,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %---------------------------------------------------------------
 
-\documentclass[11pt]{cv} % Default font size, values from 8-12pt are recommended
+\documentclass[10pt]{cv} % Default font size, values from 8-12pt are recommended
 \usepackage{multicol}
 \setlength{\columnsep}{0mm}
 \usepackage{lipsum} 
@@ -24,41 +24,45 @@
 
 
 %---------------------------------------------------------------
-%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%	PROFILE
 %---------------------------------------------------------------
 
-\begin{minipage}[t]{0.47\textwidth}
-    \cvsect{Profile}
-	%\vspace{-6pt}
-    \vskip -6pt
-	\profile\\
-\end{minipage}
-\hfill % Whitespace between
-\begin{minipage}[t]{0.465\textwidth}
-    \cvsect{Skills}
-    \vskip -6pt
+\vspace{-10pt}
+\cvsect{SUMMARY}
+\vskip -6pt
+\profile
+\vspace{10pt}
+
+
+%---------------------------------------------------------------
+%	SKILLS
+%---------------------------------------------------------------
+
+\vspace{-10pt}
+\cvsect{Skills}
+\begin{entrylist}
     \ifdefined\skillsCategoryZero
-        \cvSkills{\skillsCategoryZero}{\skillsZero}
+    \cvEntry{\skillsCategoryZero}{}{\skillsZero}{}{}
     \fi
 
     \ifdefined\skillsCategoryOne
-        \cvSkills{\skillsCategoryOne}{\skillsOne}
+    \cvEntry{\skillsCategoryOne}{}{\skillsOne}{}{}
     \fi
-    
+
     \ifdefined\skillsCategoryTwo
-        \cvSkills{\skillsCategoryTwo}{\skillsTwo}
+    \cvEntry{\skillsCategoryTwo}{}{\skillsTwo}{}{}
     \fi
 
     \ifdefined\skillsCategoryThree
-        \cvSkills{\skillsCategoryThree}{\skillsThree}
+    \cvEntry{\skillsCategoryThree}{}{\skillsThree}{}{}
     \fi
 
     \ifdefined\skillsCategoryFour
-        \cvSkills{\skillsCategoryFour}{\skillsFour}
+    \cvEntry{\skillsCategoryFour}{}{\skillsFour}{}{}
     \fi
-\end{minipage}
-       
-    
+\end{entrylist}
+
+
 %---------------------------------------------------------------
 %	EXPERIENCE
 %---------------------------------------------------------------
@@ -89,35 +93,6 @@
 
 
 %---------------------------------------------------------------
-%	EDUCATION
-%---------------------------------------------------------------
-
-\vspace{-10 pt}
-\cvsect{Education}
-\begin{entrylist}
-    \ifdefined\eduStartZero
-    \cvEntry{\eduStartZero}{\eduEndZero}{\eduDegreeZero}{\eduInstitutionZero}{\eduCourseworkZero}
-    \fi
-
-    \ifdefined\eduStartOne
-    \cvEntry{\eduStartOne}{\eduEndOne}{\eduDegreeOne}{\eduInstitutionOne}{\eduCourseworkOne}
-    \fi
-
-    \ifdefined\eduStartTwo
-    \cvEntry{\eduStartTwo}{\eduEndTwo}{\eduDegreeTwo}{\eduInstitutionTwo}{\eduCourseworkTwo}
-    \fi
-
-    \ifdefined\eduStartThree
-    \cvEntry{\eduStartThree}{\eduEndThree}{\eduDegreeThree}{\eduInstitutionThree}{\eduCourseworkThree}
-    \fi
-
-    \ifdefined\eduStartFour
-    \cvEntry{\eduStartFour}{\eduEndFour}{\eduDegreeFour}{\eduInstitutionFour}{\eduCourseworkFour}
-    \fi
-\end{entrylist}
-
-
-%---------------------------------------------------------------
 %	Projects
 %---------------------------------------------------------------
 
@@ -142,6 +117,35 @@
 
     \ifdefined\projTechFour
         \cvEntry{\projTechFour}{}{\projTitleFour}{\projSourceFour}{\projDetailsFour}
+    \fi
+\end{entrylist}
+
+
+%---------------------------------------------------------------
+%	EDUCATION
+%---------------------------------------------------------------
+
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \ifdefined\eduGradZero
+    \cvEntry{\eduGradZero}{}{\eduDegreeZero}{\eduInstitutionZero}{}
+    \fi
+
+    \ifdefined\eduGradOne
+    \cvEntry{\eduGradOne}{}{\eduDegreeOne}{\eduInstitutionOne}{}
+    \fi
+
+    \ifdefined\eduGradTwo
+    \cvEntry{\eduGradTwo}{}{\eduDegreeTwo}{\eduInstitutionTwo}{}
+    \fi
+
+    \ifdefined\eduGradThree
+    \cvEntry{\eduGradThree}{}{\eduDegreeThree}{\eduInstitutionThree}{}
+    \fi
+
+    \ifdefined\eduGradFour
+    \cvEntry{\eduGradFour}{}{\eduDegreeFour}{\eduInstitutionFour}{}
     \fi
 \end{entrylist}
 

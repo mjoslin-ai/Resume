@@ -118,9 +118,13 @@
 	}%
 	&\parbox[t]{0.82\textwidth}{% 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
-		\hfill% Horizontal whitespace
-		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
-		#4 % Entry description text
+		\ifx#3\empty\else
+			\hfill% Horizontal whitespace
+			{\footnotesize \textbf{\textcolor{black}{#3}}}% Right-aligned entry qualifier text
+		\fi
+		\ifx#4\empty\else
+			\\#4 % Entry description text
+		\fi
 	}\\\\}
 
 % Command to output a separator slash between lists, e.g. '  /  '
@@ -131,48 +135,22 @@
 %---------------------------------------------------------------
 
 \newcommand{\cvHeader}[7]{%
-    \begin{minipage}[t]{0.5\textwidth} 
-        \vspace{-\baselineskip} % Required for vertically aligning minipages
-        
-        {\fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{#1}}}} % Name
-        
-        \vspace{6pt}
-        
-        {\Large #2} % Designation
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
-        \vspace{-\baselineskip} % Required for vertically aligning minipages
-        
-        % Contact details
-        \icon{Phone}{11}{#3}\\
-        \icon{MapMarker}{11}{#4}\\
-    \end{minipage}
-    \begin{minipage}[t]{0.28\textwidth} % 27% of the page width for the second row of icons
-        \vspace{-\baselineskip} % Required for vertically aligning minipages
-        
-        \icon{Envelope}{11}{\href{mailto:#5}{#5}}\\
-        \icon{Github}{11}{\href{https://#6}{#6}}\\
-        \icon{Linkedin}{11}{\href{https://www.linkedin.com/#7}{#7}}\\
-    \end{minipage}
-}
-
-
-\newcommand{\cvSkills}[2]{ 
-    \begin{minipage}[t]{0.25\textwidth}
-        \textbf{#1:}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.7\textwidth}
-        \raggedright
-        #2
-    \end{minipage}
-    \vspace{4mm}
+    \begin{center}
+        \parbox[t]{0.95\textwidth}{%
+            \centering
+            \vspace{-\baselineskip} % Adjust vertical alignment
+            {\fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{#1}}}} \\ % Name on its own row
+            \vspace{6pt} % Space below name
+            {#3 \ | \ #4} \\ % Phone and location on their own row
+            \vspace{6pt} % Space below phone and location
+            {\href{mailto:#5}{#5} \ | \ \href{https://#6}{#6} \ | \ \href{https://www.#7}{#7}} % Email, GitHub, LinkedIn on their own row
+        }
+    \end{center}
 }
 
 
 \newcommand{\cvEntry}[5]{%
-    \entry{#1%
+    \entry{#1\
         \ifx#2\empty % Handles missing end date
         \else -- #2%
         \fi
@@ -180,7 +158,8 @@
     {#3} % Title
     {#4} % Source/Company
     {\vspace{-10pt}%
-    \ifdefined#5
+    \ifx#5\empty
+    \else    
         {\expandafter\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
             #5
         \end{itemize}}
