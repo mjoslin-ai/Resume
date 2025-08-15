@@ -134,16 +134,16 @@
 %	FUNCTIONS
 %---------------------------------------------------------------
 
-\newcommand{\cvHeader}[7]{%
+\newcommand{\cvHeader}[6]{%
     \begin{center}
         \parbox[t]{0.95\textwidth}{%
             \centering
             \vspace{-\baselineskip} % Adjust vertical alignment
             {\fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{#1}}}} \\ % Name on its own row
             \vspace{6pt} % Space below name
-            {#3 \ | \ #4} \\ % Phone and location on their own row
+            {#2 \ | \ #3} \\ % Phone and location on their own row
             \vspace{6pt} % Space below phone and location
-            {\href{mailto:#5}{#5} \ | \ \href{https://#6}{#6} \ | \ \href{https://www.#7}{#7}} % Email, GitHub, LinkedIn on their own row
+            {\href{mailto:#4}{#4} \ | \ \href{https://#5}{#5} \ | \ \href{https://www.#6}{#6}} % Email, GitHub, LinkedIn on their own row
         }
     \end{center}
 }

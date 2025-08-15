@@ -20,7 +20,7 @@
 %	TITLE AND CONTACT INFORMATION
 %---------------------------------------------------------------
 
-\cvHeader{\name}{\designation}{\phone}{\location}{\email}{\github}{\linkedin}
+\cvHeader{\name}{\phone}{\location}{\email}{\github}{\linkedin}
 
 
 %---------------------------------------------------------------
@@ -28,9 +28,9 @@
 %---------------------------------------------------------------
 
 \vspace{-10pt}
-\cvsect{SUMMARY}
+\cvsect{summary}
 \vskip -6pt
-\profile
+\summary
 \vspace{10pt}
 
 
@@ -42,22 +42,27 @@
 \cvsect{Skills}
 \begin{entrylist}
     \ifdefined\skillsCategoryZero
+    \vspace{-10pt}
     \cvEntry{\skillsCategoryZero}{}{\skillsZero}{}{}
     \fi
-
+    
     \ifdefined\skillsCategoryOne
+    \vspace{-10pt}
     \cvEntry{\skillsCategoryOne}{}{\skillsOne}{}{}
     \fi
 
     \ifdefined\skillsCategoryTwo
+    \vspace{-10pt}
     \cvEntry{\skillsCategoryTwo}{}{\skillsTwo}{}{}
     \fi
-
+    
     \ifdefined\skillsCategoryThree
+    \vspace{-10pt}
     \cvEntry{\skillsCategoryThree}{}{\skillsThree}{}{}
     \fi
-
+    
     \ifdefined\skillsCategoryFour
+    \vspace{-10pt}
     \cvEntry{\skillsCategoryFour}{}{\skillsFour}{}{}
     \fi
 \end{entrylist}
@@ -68,7 +73,7 @@
 %---------------------------------------------------------------
 
 \vspace{-10pt}
-\cvsect{Experience}
+\cvsect{Relevant Experience}
 \begin{entrylist}
     \ifdefined\expStartZero
         \cvEntry{\expStartZero}{\expEndZero}{\expTitleZero}{\expCompanyZero}{\expResponsibilitiesZero}
@@ -97,26 +102,26 @@
 %---------------------------------------------------------------
 
 \vspace{-10 pt}
-\cvsect{Projects}
+\cvsect{Personal Projects}
 \begin{entrylist}
-    \ifdefined\projTechZero
-        \cvEntry{\projTechZero}{}{\projTitleZero}{\projSourceZero}{\projDetailsZero}
+    \ifdefined\projDateZero
+        \cvEntry{\projDateZero}{}{\projTitleZero}{\projSourceZero}{\projDetailsZero}
     \fi
 
-    \ifdefined\projTechOne
-        \cvEntry{\projTechOne}{}{\projTitleOne}{\projSourceOne}{\projDetailsOne}
+    \ifdefined\projDateOne
+        \cvEntry{\projDateOne}{}{\projTitleOne}{\projSourceOne}{\projDetailsOne}
     \fi
 
     \ifdefined\projTechTwo
-        \cvEntry{\projTechTwo}{}{\projTitleTwo}{\projSourceTwo}{\projDetailsTwo}
+        \cvEntry{\projDateTwo}{}{\projTitleTwo}{\projSourceTwo}{\projDetailsTwo}
     \fi
 
     \ifdefined\projTechThree
-        \cvEntry{\projTechThree}{}{\projTitleThree}{\projSourceThree}{\projDetailsThree}
+        \cvEntry{\projDateThree}{}{\projTitleThree}{\projSourceThree}{\projDetailsThree}
     \fi
 
-    \ifdefined\projTechFour
-        \cvEntry{\projTechFour}{}{\projTitleFour}{\projSourceFour}{\projDetailsFour}
+    \ifdefined\projDateFour
+        \cvEntry{\projDateFour}{}{\projTitleFour}{\projSourceFour}{\projDetailsFour}
     \fi
 \end{entrylist}
 

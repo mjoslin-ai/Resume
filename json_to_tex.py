@@ -33,7 +33,6 @@ latex_output += "%------------------------------------\n"
 latex_output += "% CONTACT INFORMATION\n"
 latex_output += "%------------------------------------\n\n"
 latex_output += f"\\newcommand{{\\name}}{{{data['contact']['name']}}}\n"
-latex_output += f"\\newcommand{{\\designation}}{{{data['contact']['designation']}}}\n"
 latex_output += f"\\newcommand{{\\phone}}{{{data['contact']['phone']}}}\n"
 latex_output += f"\\newcommand{{\\location}}{{{data['contact']['location']}}}\n"
 latex_output += f"\\newcommand{{\\email}}{{{data['contact']['email']}}}\n"
@@ -42,13 +41,13 @@ latex_output += f"\\newcommand{{\\linkedin}}{{{data['contact']['linkedin']}}}\n\
 
 
 # ===================================
-# Profile summary
+# Summary
 # ===================================
 
 latex_output += "%------------------------------------\n"
-latex_output += "% PROFILE SUMMARY\n"
+latex_output += "% SUMMARY\n"
 latex_output += "%------------------------------------\n\n"
-latex_output += f"\\newcommand{{\\profile}}{{{data['profile']}}}\n\n\n"
+latex_output += f"\\newcommand{{\\summary}}{{{data['summary']}}}\n\n\n"
 
 
 # ===================================
@@ -145,7 +144,7 @@ latex_output += "%------------------------------------\n\n"
 
 for i, project in enumerate(data["projects"]):
     project_num = number_to_words(i)  # Convert index to word
-    latex_output += f"\\newcommand{{\\projTech{project_num}}}{{{project['tech']}}}\n"
+    latex_output += f"\\newcommand{{\\projDate{project_num}}}{{{project['date']}}}\n"
     latex_output += f"\\newcommand{{\\projTitle{project_num}}}{{{project['title']}}}\n"
 
     # Add project link if available
