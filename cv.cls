@@ -41,6 +41,10 @@
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
+\usepackage{atbegshi}
+
+\AtBeginShipout{\ifnum\value{page}=2\AtBeginShipoutDiscard\fi}
+
 %---------------------------------------------------------------
 %	FONTS
 %---------------------------------------------------------------

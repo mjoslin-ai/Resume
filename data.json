@@ -1,7 +1,7 @@
 {
   "job": {
-    "position": "[Position]",
-    "company": "[Company Name]"
+    "position": "[position]",
+    "company": "[company]"
   },
   "contact": {
     "name": "Mark Joslin",
@@ -11,7 +11,7 @@
     "github": "github.com/mjoslin-ai",
     "linkedin": "linkedin.com/in/markjoslin-ai"
   },
-  "summary": "Curious and results-driven with a passion for applying analytical insights to drive strategic decision-making. Proven success in data-driven solutions and KPI reporting, complemented by skills in Python, SQL, and Excel. Eager to leverage my data specialist background to innovate, learn, and make a meaningful impact in a dynamic and growth-oriented environment.",
+  "summary": "Curious data enthusiast with a strong passion for analytics, problem-solving, and transforming complex data into actionable insights. Proven expertise in Python, SQL, data modeling, and visualization tools like PowerBI, demonstrated through previous work experience and personal projects. Eager to leverage my data specialist background to innovate, learn, and make a meaningful impact in a dynamic and growth-oriented environment.",
   "skills": {
     "tools": ["Python", "R", "SQL", "DAX", "Excel"],
     "visualization": ["PowerBI", "Matplotlib", "ggplot2"],
@@ -28,7 +28,7 @@
       "responsibilities": [
         "Performed literature reviews for NHTSA in areas such as AI in ADAS/ADS and traffic simulation tools to help them better understand perception stack models and other technologies.",
         "Maintained an internal website and SQL database hosted on Azure to track driving simulation construction used across a diverse team to enhance workflow and quantify completion rate.",
-        "Created digital reconstructions of crash and near crash scenarios with the use of RoadRunner and Excel using VTTI’s database to allow subscribers means to study these scenarios under different factors such as sensor degredation and misinformation.",
+        "Created digital reconstructions of crash and near crash scenarios with the use of RoadRunner and Excel using VTTI’s database to allow subscribers means to study these scenarios under different factors such as sensor degradation and misinformation.",
         "Developed a Python script for dimensionality reduction and clustering of highway cut-in and lane change maneuvers using VTTI’s naturalistic driving database, visualizing and analyzing factors’ central tendencies to enhance the Division of Data and Analytics’ understanding of these maneuvers compared to domain knowledge."
       ]
     },
