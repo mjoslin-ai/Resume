@@ -69,6 +69,40 @@
 
 
 %---------------------------------------------------------------
+%	EDUCATION
+%---------------------------------------------------------------
+
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \ifdefined\eduGradZero
+    \vspace{-10pt}
+    \cvEntry{\eduGradZero}{}{\eduDegreeZero}{\eduInstitutionZero}{}
+    \fi
+
+    \ifdefined\eduGradOne
+    \vspace{-10pt}
+    \cvEntry{\eduGradOne}{}{\eduDegreeOne}{\eduInstitutionOne}{}
+    \fi
+
+    \ifdefined\eduGradTwo
+    \vspace{-10pt}
+    \cvEntry{\eduGradTwo}{}{\eduDegreeTwo}{\eduInstitutionTwo}{}
+    \fi
+
+    \ifdefined\eduGradThree
+    \vspace{-10pt}
+    \cvEntry{\eduGradThree}{}{\eduDegreeThree}{\eduInstitutionThree}{}
+    \fi
+
+    \ifdefined\eduGradFour
+    \vspace{-10pt}
+    \cvEntry{\eduGradFour}{}{\eduDegreeFour}{\eduInstitutionFour}{}
+    \fi
+\end{entrylist}
+
+
+%---------------------------------------------------------------
 %	EXPERIENCE
 %---------------------------------------------------------------
 
@@ -126,33 +160,7 @@
 \end{entrylist}
 
 
-%---------------------------------------------------------------
-%	EDUCATION
-%---------------------------------------------------------------
 
-\vspace{-10 pt}
-\cvsect{Education}
-\begin{entrylist}
-    \ifdefined\eduGradZero
-    \cvEntry{\eduGradZero}{}{\eduDegreeZero}{\eduInstitutionZero}{}
-    \fi
-
-    \ifdefined\eduGradOne
-    \cvEntry{\eduGradOne}{}{\eduDegreeOne}{\eduInstitutionOne}{}
-    \fi
-
-    \ifdefined\eduGradTwo
-    \cvEntry{\eduGradTwo}{}{\eduDegreeTwo}{\eduInstitutionTwo}{}
-    \fi
-
-    \ifdefined\eduGradThree
-    \cvEntry{\eduGradThree}{}{\eduDegreeThree}{\eduInstitutionThree}{}
-    \fi
-
-    \ifdefined\eduGradFour
-    \cvEntry{\eduGradFour}{}{\eduDegreeFour}{\eduInstitutionFour}{}
-    \fi
-\end{entrylist}
 
 
 %---------------------------------------------------------------

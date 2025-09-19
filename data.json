@@ -11,9 +11,9 @@
     "github": "github.com/mjoslin-ai",
     "linkedin": "linkedin.com/in/markjoslin-ai"
   },
-  "summary": "Curious data enthusiast with a strong passion for analytics, problem-solving, and transforming complex data into actionable insights. Proven expertise in Python, SQL, data modeling, and visualization tools like PowerBI, demonstrated through previous work experience and personal projects. Eager to leverage my data specialist background to innovate, learn, and make a meaningful impact in a dynamic and growth-oriented environment.",
+  "summary": "Curious data enthusiast with a strong passion for analytics, problem solving, and transforming complex data into actionable insights. Proven expertise in Python, SQL, data modeling, and visualization tools like PowerBI, demonstrated through previous work experience and personal projects. Eager to leverage my data specialist background to innovate, learn, and make a meaningful impact in a dynamic and growth-oriented environment.",
   "skills": {
-    "tools": ["Python", "R", "SQL", "DAX", "Excel"],
+    "Tools": ["Python", "R", "SQL", "DAX", "Excel"],
     "visualization": ["PowerBI", "Matplotlib", "ggplot2"],
     "Version Control": ["GitHub", "Azure DevOps"]
   },
@@ -51,15 +51,22 @@
       "link": "https://www.chelseaprovinggrounds.com/en-us/Pages/Home.aspx",
       "location": "Chelsea, MI",
       "start": "5/2016",
-      "end": "9/2017",
+      "end": "6/2017",
       "responsibilities": [
-        "Conducted endurance tests identifying critical safety and performance issues to enhance vehicle reliability.",
-        "Issue documentation via Ipad to ensure precise diagnostics for the engineering team.",
-        "Maintained strict testing protocols such as oval track for power train, high hill grade and off road for four wheel drive, and specially designed roads for suspension."
+        "Conducted rigorous endurance tests, identifying critical safety and performance issues pre- and post-launch.",
+        "Ensured precise diagnostics and issue documentation, streamlining engineering fixes.",
+        "Maintained strict testing protocols, enhancing vehicle reliability."
       ]
     }
   ],
   "education": [
+    {
+      "degree": "Advanced Data Analytics Certificate",
+      "institution": "Google",
+      "link": "https://www.coursera.org/professional-certificates/google-advanced-data-analytics",
+      "graduation": "2/2026",
+      "location": "Online Course"
+    },
     {
       "degree": "Bachelor of Science in Data Science",
       "institution": "Western Michigan University",
